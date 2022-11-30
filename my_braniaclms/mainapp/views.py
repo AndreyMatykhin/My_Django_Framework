@@ -31,4 +31,5 @@ class NewsView(TemplateView):
         context['news_list'] = [{'item': f'Новостной заголовок {i + 1}',
                                  'text': f'Предварительное описание {i + 1}, которое заинтересует каждого'}
                                 for i in range(5)]
+        context['range'] = range(1, 6)
         return context
