@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
+{% block title %}
+Новости
+{% endblock title %}
+
 {% block content %}
 
 {% if page_num %}
@@ -14,13 +18,15 @@
 
     <div class="col-lg-8">
 
-        {% for el in news_list%}
+        {% for el in news_qs %}
         <div class="card my-2">
             <div class="card-body">
-                <h5 class="card-title">{{ el.news }}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">2021-04-29 20-50-26</h6>
-                <p class="card-text">{{ el.text }}</p>
-                <a href="#" class="card-link">Подробнее</a>
+                <h5 class="card-title">{{ el.title }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                    {{ el.created|date:"Y-m-d h-i-s" }}
+                </h6>
+                <p class="card-text">{{ el.preamble }}</p>
+                <a href="{% url 'mainapp:news_detail' pk=el.pk %}" class="card-link">Подробнее</a>
             </div>
         </div>
         {% endfor %}
@@ -60,9 +66,9 @@
     <nav aria-label="Page navigation example">
         <ul class="pagination">
             <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            {% for el in range %}
-            <li class="page-item"><a class="page-link" href="{% url 'mainapp:news_paginator' el %}">{{ el }}</a></li>
-            {% endfor %}
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            {# <li class="page-item"><a class="page-link" href="#">3</a></li> #}
             <li class="page-item"><a class="page-link" href="#">Next</a></li>
         </ul>
     </nav>

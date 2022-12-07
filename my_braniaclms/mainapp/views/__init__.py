@@ -6,3 +6,5 @@ from .index import *
 from .login import *
 from .news import *
 from .news_plaginator import *
+from .news_detail import *
+from .courses_detail import *
