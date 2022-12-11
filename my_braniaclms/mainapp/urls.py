@@ -10,7 +10,6 @@ urlpatterns = [
     path("courses/<int:pk>/", views.CoursesDetailView.as_view(), name="courses_detail", ),
     path('docsite/', views.DocSiteView.as_view(), name='doc_site'),
     path('', views.IndexView.as_view(), name='main_page'),
-    path('login/', views.LoginView.as_view(), name='login'),
     path('news/', views.NewsView.as_view(), name='news'),
     path("news/<int:pk>/", views.NewsDetailView.as_view(), name="news_detail")
 ]
