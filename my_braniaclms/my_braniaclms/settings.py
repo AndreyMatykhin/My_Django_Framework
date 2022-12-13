@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'social_django',
     'mainapp',
     'authapp',
+    'crispy_forms',
 ]
 
 AUTH_USER_MODEL = "authapp.CustomUser"
@@ -154,3 +155,5 @@ SOCIAL_AUTH_GITHUB_SECRET = "6769721b72cea70caccb56cbc518009e0930353d"
 SOCIAL_AUTH_VK_OAUTH2_KEY = '51500310'
 SOCIAL_AUTH_VK_OAUTH2_SECRET = 'DU9jp8HfbRn7kVD712Rs'
 SOCIAL_AUTH_VK_OAUTH2_API_VERSION = '5.131'
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
