@@ -17,4 +17,6 @@ urlpatterns = [
     path("news/<int:pk>/detail", views.NewsDetailView.as_view(), name="news_detail"),
     path("news/<int:pk>/update", views.NewsUpdateView.as_view(), name="news_update", ),
     path("news/<int:pk>/delete", views.NewsDeleteView.as_view(), name="news_delete", ),
+    path("log_view/", views.LogView.as_view(), name="log_view"),
+    path("log_download/", views.LogDownloadView.as_view(), name="log_download"),
 ]

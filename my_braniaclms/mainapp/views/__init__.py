@@ -5,3 +5,5 @@ from .index import *
 from .news_CRUD import *
 from .courses_detail import *
 from .course_feedback import *
+from .log import *
+from .log_download import *
