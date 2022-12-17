@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'mainapp',
     'authapp',
     'crispy_forms',
+    'debug_toolbar',
 ]
 
 AUTH_USER_MODEL = "authapp.CustomUser"
@@ -49,7 +50,6 @@ AUTHENTICATION_BACKENDS = (
     "social_core.backends.vk.VKOAuth2",
     "django.contrib.auth.backends.ModelBackend",
 )
-
 
 LOGIN_REDIRECT_URL = "mainapp:main_page"
 LOGOUT_REDIRECT_URL = "mainapp:main_page"
@@ -64,6 +64,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'my_braniaclms.urls'
@@ -184,4 +185,21 @@ LOGGING = {
             "handlers": ["file"],
         },
     },
+}
+
+ALLOWED_HOSTS = ["*"]
+
+if DEBUG:
+    INTERNAL_IPS = [
+        "127.0.0.1",
+    ]
+
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        },
+    }
 }
