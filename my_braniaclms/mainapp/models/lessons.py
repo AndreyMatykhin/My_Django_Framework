@@ -2,6 +2,7 @@ __all__ = ['Lessons']
 
 from django.db import models
 from .courses import Courses
+from django.utils.translation import gettext_lazy as _
 
 
 class Lessons(models.Model):
@@ -23,3 +24,5 @@ class Lessons(models.Model):
 
     class Meta:
         ordering = ("course", "num")
+        verbose_name = _("Lesson")
+        verbose_name_plural = _("Lessons")
