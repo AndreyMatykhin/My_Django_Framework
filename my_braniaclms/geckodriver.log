@@ -1,0 +1,23 @@
+1671455370910	geckodriver	INFO	Listening on 127.0.0.1:48713
+/snap/firefox/current/firefox.launcher: 29: /snap/pycharm-community/310/patch-default-profile.py: not found
+/snap/firefox/current/firefox.launcher: 46: exec: /snap/pycharm-community/310/usr/lib/firefox/firefox: not found
+1671455371949	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "42289" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilebmCj9X"
+/snap/firefox/current/firefox.launcher: 46: exec: /snap/pycharm-community/310/usr/lib/firefox/firefox: not found
+1671455372486	geckodriver	INFO	Listening on 127.0.0.1:47845
+/snap/firefox/current/firefox.launcher: 46: exec: /snap/pycharm-community/310/usr/lib/firefox/firefox: not found
+1671455373209	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "56395" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileUhDuuw"
+/snap/firefox/current/firefox.launcher: 46: exec: /snap/pycharm-community/310/usr/lib/firefox/firefox: not found
+Invalid port. Exiting...
+Invalid port. Exiting...
+Invalid port. Exiting...
+Invalid port. Exiting...
+Invalid port. Exiting...
+Invalid port. Exiting...
+1671456379225	geckodriver	INFO	Listening on 127.0.0.1:42187
+/snap/firefox/current/firefox.launcher: 46: exec: /snap/pycharm-community/310/usr/lib/firefox/firefox: not found
+1671456379736	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "39169" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileBwpd9N"
+/snap/firefox/current/firefox.launcher: 46: exec: /snap/pycharm-community/310/usr/lib/firefox/firefox: not found
+1671456380011	geckodriver	INFO	Listening on 127.0.0.1:51591
+/snap/firefox/current/firefox.launcher: 46: exec: /snap/pycharm-community/310/usr/lib/firefox/firefox: not found
+1671456380521	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "38951" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile1DH2Fp"
+/snap/firefox/current/firefox.launcher: 46: exec: /snap/pycharm-community/310/usr/lib/firefox/firefox: not found
