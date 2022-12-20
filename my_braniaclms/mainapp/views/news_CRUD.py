@@ -17,7 +17,12 @@ class NewsListView(ListView):
     paginate_by = 5
 
     def get_queryset(self):
-        return super().get_queryset().filter(deleted=False)
+        qs = super().get_queryset().filter(deleted=False)
+        if self.request.GET.get('dateFrom'):
+            qs = qs.filter(created__gte=self.request.GET.get('dateFrom'))
+        if self.request.GET.get('dateTo'):
+            qs = qs.filter(created__lte=self.request.GET.get('dateTo'))
+        return qs
 
 
 class NewsDetailView(DetailView):
