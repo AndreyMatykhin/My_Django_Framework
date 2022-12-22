@@ -18,4 +18,3 @@ DATABASES = {
 }
 
 del STATICFILES_DIRS
-STATIC_ROOT = BASE_DIR / "static"
