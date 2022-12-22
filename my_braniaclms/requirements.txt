@@ -1,8 +1,8 @@
 amqp==5.1.1
-asgiref==3.5.2
+asgiref==3.6.0
 async-generator==1.10
 async-timeout==4.0.2
-attrs==22.1.0
+attrs==22.2.0
 billiard==4.1.0
 bleach==5.0.1
 celery==5.2.7
@@ -58,3 +58,7 @@ vine==5.0.0
 wcwidth==0.2.5
 webencodings==0.5.1
 wsproto==1.2.0
+
+# For production
+gunicorn
+psycopg2-binary
